@@ -1,59 +1,33 @@
-<?php
-session_start();
-
-if (isset($_SESSION['admin'])) {
-    header("Location: ../admin/dashboard.php");
-    exit;
-}
-?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Admin - Samarinda Theme Park</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
-<div class="login-page">
-    <div class="login-card">
-        <div class="login-brand">
-            <div class="logo-circle">S</div>
-            <div class="brand-text">
-                <h1>Samarinda</h1>
-                <p>Theme Park</p>
+<div class="container d-flex justify-content-center">
+    <div class="card card-login shadow w-100">
+        <div class="card-body p-4">
+            <h3 class="text-center mb-4 text-danger">Admin Login</h3>
+            
+            <form action="aksi_login.php" method="POST">
+                <div class="mb-3">
+                    <label class="form-label">Username</label>
+                    <input type="text" name="username" class="form-control" placeholder="Masukkan username" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" name="password" class="form-control" placeholder="Masukkan password" required>
+                </div>
+                <button type="submit" class="btn btn-danger w-100">Login</button>
+            </form>
+            
+            <div class="text-center mt-3">
+                <small class="text-muted">Samarinda Theme Park Project</small>
             </div>
-        </div>
-
-        <div class="login-title">
-            <h2>Login Admin</h2>
-            <p>Masuk untuk mengelola data website.</p>
-        </div>
-
-        <?php if (isset($_GET['error'])) : ?>
-            <div class="alert-error">
-                Username atau password salah.
-            </div>
-        <?php endif; ?>
-
-        <form action="proses_login.php" method="POST" class="login-form">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username" placeholder="Masukkan username" required>
-            </div>
-
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="Masukkan password" required>
-            </div>
-
-            <button type="submit" class="login-btn">Login</button>
-        </form>
-
-        <div class="back-link">
-            <a href="../index.php">← Kembali ke Website</a>
         </div>
     </div>
 </div>

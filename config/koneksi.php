@@ -2,11 +2,11 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "stp_db";
+$db   = "database_stp";
 
-$conn = mysqli_connect($host, $user, $pass, $db);
+$koneksi = mysqli_connect($host, $user, $pass, $db);
 
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+if (mysqli_connect_errno()) {
+	echo "Koneksi database gagal : " . mysqli_connect_error();
 }
 ?>

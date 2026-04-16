@@ -1477,3 +1477,15 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+/* Tambahkan ini di paling bawah style.css kamu */
+.sidebar .brand {
+    padding: 20px 25px !important;
+}
+
+.brand-title {
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    line-height: 0.8 !important; /* Memaksa teks rapat ke bawah */
+    margin: 0 !important;
+}
