@@ -1,120 +1,157 @@
 <?php
 session_start();
-if($_SESSION['status'] != "login"){
-    header("location:../auth/login.php?pesan=belum_login");
-    exit();
-}
-include '../config/koneksi.php';
+include '../config/koneksi.php'; 
 
-// Query untuk Statistik Card
-$q_wahana = mysqli_query($koneksi, "SELECT * FROM wahana");
-$q_fasilitas = mysqli_query($koneksi, "SELECT * FROM fasilitas");
-$q_tiket = mysqli_query($koneksi, "SELECT * FROM tiket");
-$q_promo = mysqli_query($koneksi, "SELECT * FROM promo");
-
-// Query untuk Tabel di bawah (Limit 5 data terbaru)
-$wahana_terbaru = mysqli_query($koneksi, "SELECT * FROM wahana ORDER BY id_wahana DESC LIMIT 5");
-$review_terbaru = mysqli_query($koneksi, "SELECT * FROM ulasan ORDER BY id_ulasan DESC LIMIT 5");
+// Penanda halaman aktif agar menu Dashboard menyala
+$activePage = "dashboard";
 ?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Samarinda Theme Park</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="admin.css">
+
     <style>
-        :root { --stp-crimson: #E01940; --stp-bg: #F4F6F9; }
-        body { background-color: var(--stp-bg); font-family: 'Poppins', sans-serif; }
-        
-        .main-content { margin-left: 250px; padding: 40px; }
-        
-        /* Gaya Card Statistik */
-        .stat-card { 
-            background: white; border-radius: 20px; padding: 25px; 
-            border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            display: flex; align-items: center; justify-content: space-between;
+        /* Mengunci posisi agar tidak berantakan lagi */
+        .main-content {
+            margin-left: 258px; /* Sesuai lebar sidebar di admin.css */
+            width: calc(100% - 258px);
+            padding: 40px;
         }
 
-        /* Gaya Tabel Dashboard (Figma Style) */
-        .dashboard-table-card {
-            background: white; border-radius: 20px; padding: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02); height: 100%;
+        .dashboard-header {
+            margin-bottom: 30px;
         }
-        .table-title { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
-        .badge-category { 
-            background: #FFE5E9; color: var(--stp-crimson); 
-            font-size: 10px; padding: 4px 10px; border-radius: 20px; font-weight: 600;
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .stat-icon {
+            width: 56px;
+            height: 56px;
+            border-radius: 12px;
+            background: rgba(255, 15, 75, 0.1);
+            color: #ff0f4b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .stat-info h3 {
+            font-size: 14px;
+            color: #888;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-info .value {
+            font-size: 28px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-top: 4px;
         }
     </style>
 </head>
 <body>
 
-<div class="main-content">
-    <div class="mb-4">
-        <h2 class="fw-bold">Dashboard</h2>
-        <p class="text-muted small">Selamat datang di admin panel Samarinda Theme Park</p>
+<div class="admin-wrapper">
+    <div class="sidebar">
+        <div class="brand">
+            <h2>ADMIN</h2>
+            <p>Samarinda Theme Park</p>
+        </div>
+        
+        <div class="menu-title">Main</div>
+        <ul>
+            <li><a href="dashboard.php" class="<?= ($activePage == 'dashboard') ? 'active' : ''; ?>">Dashboard</a></li>
+        </ul>
+
+        <div class="menu-title">Konten Website</div>
+        <ul>
+            <li><a href="wahana.php" class="<?= ($activePage == 'wahana') ? 'active' : ''; ?>">Wahana</a></li>
+            <li><a href="data_fasilitas.php" class="<?= ($activePage == 'fasilitas') ? 'active' : ''; ?>">Fasilitas</a></li>
+            <li><a href="tiket.php" class="<?= ($activePage == 'tiket') ? 'active' : ''; ?>">Tiket</a></li>
+            <li><a href="promo.php" class="<?= ($activePage == 'promo') ? 'active' : ''; ?>">Promo</a></li>
+            <li><a href="review.php" class="<?= ($activePage == 'review') ? 'active' : ''; ?>">Review</a></li>
+            <li><a href="beranda.php" class="<?= ($activePage == 'beranda') ? 'active' : ''; ?>">Beranda</a></li>
+            <li><a href="kontak.php" class="<?= ($activePage == 'kontak') ? 'active' : ''; ?>">Kontak</a></li>
+        </ul>
+        
+        <div class="menu-title">Pengaturan</div>
+        <ul>
+            <li><a href="akun_admin.php" class="<?= ($activePage == 'akun') ? 'active' : ''; ?>">Akun Admin</a></li>
+            <li><a href="logout.php">Log Out</a></li>
+        </ul>
     </div>
 
-    <div class="row mb-4">
-        <div class="col-md-3">
+    <div class="main-content">
+        <div class="dashboard-header">
+            <h1 style="font-size: 32px; font-weight: 800; color: #1a1a1a;">Dashboard Overview</h1>
+            <p style="color: #666;">Pantau performa konten Samarinda Theme Park hari ini.</p>
+        </div>
+
+        <div class="stats-grid">
             <div class="stat-card">
-                <div><small class="text-muted d-block">TOTAL WAHANA</small><h3 class="fw-bold m-0"><?php echo mysqli_num_rows($q_wahana); ?></h3></div>
-                <img src="../assets/img/icon-wahana.png" width="40">
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="stat-card" style="background: #E3F2FD;">
-                <div><small class="text-primary d-block">TOTAL FASILITAS</small><h3 class="fw-bold m-0"><?php echo mysqli_num_rows($q_fasilitas); ?></h3></div>
-                <img src="../assets/img/icon-fasilitas.png" width="40">
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="stat-card" style="background: #F1F8E9;">
-                <div><small class="text-success d-block">TOTAL TIKET</small><h3 class="fw-bold m-0"><?php echo mysqli_num_rows($q_tiket); ?></h3></div>
-                <img src="../assets/img/icon-tiket.png" width="40">
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="stat-card" style="background: #F3E5F5;">
-                <div><small class="text-purple d-block">TOTAL PROMO</small><h3 class="fw-bold m-0"><?php echo mysqli_num_rows($q_promo); ?></h3></div>
-                <img src="../assets/img/icon-promo.png" width="40">
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-7">
-            <div class="dashboard-table-card">
-                <h5 class="table-title">Wahana Terbaru</h5>
-                <table class="table table-borderless align-middle">
-                    <tbody>
-                        <?php while($w = mysqli_fetch_array($wahana_terbaru)) { ?>
-                        <tr>
-                            <td>
-                                <div class="fw-bold"><?php echo $w['nama_wahana']; ?></div>
-                            </td>
-                            <td class="text-end"><span class="badge-category">EXTREME</span></td>
-                        </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <div class="col-md-5">
-            <div class="dashboard-table-card">
-                <h5 class="table-title">Review Terbaru</h5>
-                <?php while($r = mysqli_fetch_array($review_terbaru)) { ?>
-                <div class="mb-3 pb-3 border-bottom">
-                    <div class="d-flex justify-content-between">
-                        <h6 class="fw-bold m-0"><?php echo $r['nama_pengunjung']; ?></h6>
-                        <small class="text-warning">★★★★★</small>
+                <div class="stat-icon"><i class="fa-solid fa-building-circle-check"></i></div>
+                <div class="stat-info">
+                    <h3>Total Fasilitas</h3>
+                    <div class="value">
+                        <?php 
+                        $res = mysqli_query($koneksi, "SELECT count(*) as total FROM fasilitas");
+                        $data = mysqli_fetch_assoc($res);
+                        echo $data['total'];
+                        ?>
                     </div>
-                    <p class="text-muted small m-0 mt-1"><?php echo substr($r['ulasan'], 0, 50); ?>...</p>
                 </div>
-                <?php } ?>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-ferris-wheel"></i></div>
+                <div class="stat-info">
+                    <h3>Total Wahana</h3>
+                    <div class="value">
+                        <?php 
+                        $res_w = mysqli_query($koneksi, "SELECT count(*) as total FROM wahana");
+                        $data_w = mysqli_fetch_assoc($res_w);
+                        echo $data_w['total'] ?? 0;
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-ticket"></i></div>
+                <div class="stat-info">
+                    <h3>Kategori Tiket</h3>
+                    <div class="value">
+                        <?php 
+                        $res_t = mysqli_query($koneksi, "SELECT count(*) as total FROM tiket");
+                        $data_t = mysqli_fetch_assoc($res_t);
+                        echo $data_t['total'] ?? 0;
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

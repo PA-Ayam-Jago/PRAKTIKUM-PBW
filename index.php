@@ -66,13 +66,13 @@ $qTiket = mysqli_query($conn, "
 
 <header class="navbar">
     <div class="container nav-wrap">
-        <div class="logo-wrap">
+        <a href="login_admin.php" class="logo-wrap">
             <div class="logo-circle">S</div>
             <div>
                 <h2>Samarinda</h2>
                 <p>Theme Park</p>
             </div>
-        </div>
+        </a>
 
         <nav class="nav-menu">
             <a href="index.php" class="active">Home</a>
@@ -440,5 +440,3 @@ $heroBg = !empty($beranda['hero_background']) ? $beranda['hero_background'] : 'h
         <p>© 2026 Samarinda Theme Park. All rights reserved.</p>
     </div>
 </footer>
-
-<?php include 'partials/footer.php'; ?>

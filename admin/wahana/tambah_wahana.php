@@ -1,66 +1,66 @@
 <?php
-$pageTitle = "Tambah Wahana";
-$activePage = "wahana";
+require "../../config/koneksi.php";
 include "../partials/header.php";
 include "../partials/sidebar.php";
 ?>
 
-<h1 class="page-title">Tambah Wahana</h1>
-<p class="page-subtitle">Tambah data wahana baru</p>
-
-<div class="card">
-    <form action="" method="POST">
-        <div class="form-group">
-            <label for="nama_wahana">Nama Wahana</label>
-            <input type="text" id="nama_wahana" name="nama_wahana" placeholder="Masukkan nama wahana" required>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group">
-                <label for="kategori">Kategori</label>
-                <select id="kategori" name="kategori" required>
-                    <option value="">-- Pilih Kategori --</option>
-                    <option value="Thrill">Thrill</option>
-                    <option value="Water">Water</option>
-                    <option value="Family">Family</option>
-                    <option value="Kids">Kids</option>
-                </select>
+<div class="container py-4">
+    <h1 class="page-title">Tambah Wahana</h1>
+    <div class="dashboard-box">
+        <form action="simpan_wahana.php" method="POST" enctype="multipart/form-data">
+            
+            <div class="mb-3">
+                <label class="form-label">Nama Wahana</label>
+                <input type="text" name="nama_wahana" class="form-control" required>
             </div>
 
-            <div class="form-group">
-                <label for="intensity">Intensity</label>
-                <select id="intensity" name="intensity" required>
-                    <option value="">-- Pilih Intensity --</option>
-                    <option value="Extreme">Extreme</option>
-                    <option value="High">High</option>
-                    <option value="Medium">Medium</option>
-                    <option value="Low">Low</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-group">
-                <label for="kapasitas">Kapasitas</label>
-                <input type="text" id="kapasitas" name="kapasitas" placeholder="Contoh: 24" required>
+            <div class="mb-3">
+                <label class="form-label">Deskripsi</label>
+                <textarea name="deskripsi" class="form-control" rows="3" required></textarea>
             </div>
 
-            <div class="form-group">
-                <label for="durasi">Durasi</label>
-                <input type="text" id="durasi" name="durasi" placeholder="Contoh: 3 menit" required>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Kategori</label>
+                    <select name="kategori" class="form-select">
+                        <option>Wahana Ekstrem</option>
+                        <option>Hiburan Keluarga</option>
+                        <option>Zona Anak</option>
+                        <option>Wahana Air</option>
+                    </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Intensitas</label>
+                    <select name="intensity" class="form-select">
+                        <option>High</option>
+                        <option>Medium</option>
+                        <option>Low</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div class="form-group">
-            <label for="lokasi">Lokasi / Deskripsi Singkat</label>
-            <input type="text" id="lokasi" name="lokasi" placeholder="Contoh: Thrill Zone - Section A" required>
-        </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Durasi (Menit)</label>
+                    <input type="number" name="durasi" class="form-control" value="5">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label class="form-label">Kapasitas (Orang)</label>
+                    <input type="number" name="kapasitas" class="form-control" value="20">
+                </div>
+            </div>
 
-        <div class="btn-group">
-            <button type="submit" class="btn btn-success">Simpan</button>
-            <a href="wahana.php" class="btn btn-secondary">Batal</a>
-        </div>
-    </form>
+            <div class="mb-3">
+                <label class="form-label">Gambar Wahana</label>
+                <input type="file" name="gambar" class="form-control" accept="image/*" required>
+            </div>
+
+            <div class="mt-4">
+                <button type="submit" class="btn btn-primary">Simpan Wahana</button>
+                <a href="wahana.php" class="btn btn-secondary">Batal</a>
+            </div>
+        </form>
+    </div>
 </div>
 
 <?php include "../partials/footer.php"; ?>
