@@ -54,37 +54,77 @@ Sebagai solusi atas pengelolaan informasi yang sebelumnya terfragmentasi, sistem
 
 ## 🗂️ Fitur Website
 
+
 <p align="justify">
 Sistem ini dirancang dengan dua hak akses utama untuk memastikan penyampaian informasi yang terstruktur dan pengelolaan data yang efisien.
 </p>
 
 ### Pengunjung
 <p align="justify">
-Pengunjung dapat mengakses berbagai informasi terkait **Samarinda Theme Park** secara mudah. Beberapa fitur dapat diakses tanpa login, sementara fitur interaksi tertentu memerlukan akses masuk.
+Pengunjung dapat mengakses berbagai informasi terkait *Samarinda Theme Park* secara mudah. Beberapa fitur dapat diakses tanpa login, sementara fitur interaksi tertentu memerlukan akses masuk.
 </p>
 
+<img width="1366" height="674" alt="hero (home)" src="https://github.com/user-attachments/assets/34bfa10e-019d-40ae-848d-a4c9177bc33a" />
 
-* **Melihat Halaman Beranda** Menampilkan gambaran umum, wahana populer, promo terbaru, dan testimoni pengunjung.
-* **Melihat Daftar Wahana** Menampilkan informasi lengkap seperti kategori wahana (Ekstrem, Keluarga, Anak, Air), deskripsi, kapasitas, dan tingkat kesulitan.
-* **Melihat Fasilitas** Menampilkan daftar fasilitas penunjang seperti area parkir, tempat makan, layanan medis, dan mushola.
-* **Melihat Informasi Tiket & Promo** Menampilkan detail harga tiket (Harian, Paket, Tahunan) serta daftar penawaran promo yang sedang berlangsung.
-* **Melihat Ulasan Pengunjung** Pengunjung dapat melihat rating keseluruhan serta komentar dari pengunjung lain untuk referensi rekreasi.
-* **Memberikan Ulasan (Login Required)** Untuk menjaga validitas data, pengunjung diwajibkan login terlebih dahulu sebelum memberikan penilaian atau ulasan.
-* **Fitur Redirect Pemesanan** Memudahkan pengunjung untuk melakukan pemesanan tiket melalui pengalihan ke platform mitra atau kontak resmi.
-* **Logout** Pengunjung dapat melakukan logout untuk mengakhiri sesi penggunaan sistem setelah melakukan interaksi.
+* *Melihat Halaman Beranda* Menampilkan gambaran umum, wahana populer, promo terbaru, dan testimoni pengunjung.
+
+<img width="1366" height="680" alt="Lokasi (home)" src="https://github.com/user-attachments/assets/de4da72b-787e-44bf-8cba-b5fc9c94fb50" />
+
+* *Melihat Halaman Lokasi* menampilkan halaman informasi lokasi Samarinda Theme Park yang memudahkan pengunjung menemukan tempat wisata.
+
+<img width="1366" height="692" alt="wahana ekstrem (wahana)" src="https://github.com/user-attachments/assets/d8b3e080-a26b-4fb6-a4c1-6b7d0cac110c" />
+
+* *Melihat Daftar Wahana* Menampilkan informasi lengkap seperti kategori wahana (Ekstrem, Keluarga, Anak, Air), deskripsi, kapasitas, dan tingkat kesulitan.
+
+<img width="1366" height="674" alt="fasilitas (home)" src="https://github.com/user-attachments/assets/94a97326-87fd-4481-8d63-3d573cf2c945" />
+
+* *Melihat Fasilitas* Menampilkan daftar fasilitas penunjang seperti area parkir, tempat makan, layanan medis, dan mushola.
+
+<img width="1366" height="700" alt="tiket (home)" src="https://github.com/user-attachments/assets/b9a69214-cf02-405d-b207-f1b71c4a8831" />
+
+* *Melihat Informasi Tiket & Promo* Menampilkan detail harga tiket (Harian, Paket, Tahunan) serta daftar penawaran promo yang sedang berlangsung.
+
+<img width="1366" height="676" alt="ulasan (home)" src="https://github.com/user-attachments/assets/2f9cd5f5-b40a-48f0-b59c-4607a56dc99c" />
+
+* *Melihat Ulasan Pengunjung* Pengunjung dapat melihat rating keseluruhan serta komentar dari pengunjung lain untuk referensi rekreasi.
+
+<img width="1366" height="670" alt="footer (home)" src="https://github.com/user-attachments/assets/bb17f4ff-aa66-435f-96aa-83bad1d1bb0a" />
+
+* *Melihat Bagian Footer* Pengunjung dapat melihat informasi penting seperti kontak, alamat, jam operasional, serta media pemesanan melalui Traveloka dan WhatsApp.
+
 
 ### Admin
 <p align="justify">
 Admin memiliki akses penuh melalui sistem login untuk mengelola seluruh konten dan memantau aktivitas pada website. Fitur yang tersedia antara lain:
 </p>
 
-* **Login & Logout** Sistem autentikasi keamanan untuk memastikan akses dashboard hanya dimiliki oleh admin yang berwenang.
-* **Dashboard Admin** Menampilkan ringkasan statistik berupa jumlah total wahana, fasilitas, tiket, dan pemantauan ulasan terbaru secara efisien.
-* **Mengelola Data Wahana & Fasilitas (CRUD)** Admin dapat menambah, melihat, mengubah, dan menghapus informasi terkait wahana serta fasilitas pendukung.
-* **Mengelola Tiket & Promo** Admin memiliki otoritas untuk memperbarui harga tiket serta mengatur masa berlaku promo yang ditampilkan.
-* **Mengelola Ulasan (Moderasi)** Admin dapat memantau, menampilkan, atau menyembunyikan ulasan tertentu untuk menjaga kualitas informasi di kolom komentar.
-* **Pengaturan Beranda & Web** Digunakan untuk mengelola konten utama pada halaman depan, termasuk memperbarui *hero section* dan informasi kontak.
-* **Manajemen Akun Admin** Fitur untuk mengelola data akun administrator, termasuk menambah rekan admin baru ke dalam sistem.
+* *Login & Logout* Sistem autentikasi keamanan untuk memastikan akses dashboard hanya dimiliki oleh admin yang berwenang.
+
+<img width="1440" height="1024" alt="DASHBOARD" src="https://github.com/user-attachments/assets/4a79ccce-13c1-4375-9c9c-e4d9e83bfdbb" />
+
+* *Dashboard Admin* Menampilkan ringkasan statistik berupa jumlah total wahana, fasilitas, tiket, dan pemantauan ulasan terbaru secara efisien.
+
+<img width="1440" height="1024" alt="WAHANA ADMIN" src="https://github.com/user-attachments/assets/8601bc41-c30f-404c-8513-8486c6bd61a8" />
+
+<img width="1440" height="1024" alt="FASILITAS ADMIN" src="https://github.com/user-attachments/assets/bc088a8e-47a0-4c83-a661-34a9bb85a9a1" />
+
+* *Mengelola Data Wahana & Fasilitas (CRUD)* Admin dapat menambah, melihat, mengubah, dan menghapus informasi terkait wahana serta fasilitas pendukung.
+
+<img width="1440" height="1024" alt="TIKET ADMIN" src="https://github.com/user-attachments/assets/f2874f1c-3308-49be-bf87-ce49fb84b8d1" />
+
+<img width="1440" height="1024" alt="PROMO ADMIN" src="https://github.com/user-attachments/assets/6502543a-02a8-4a66-915d-0510d03569b9" />
+
+* *Mengelola Tiket & Promo* Admin memiliki otoritas untuk memperbarui harga tiket serta mengatur masa berlaku promo yang ditampilkan.
+
+<img width="1440" height="1024" alt="REVIEW ADMIN" src="https://github.com/user-attachments/assets/a0914b24-38e7-4c58-a575-27101a5242ab" />
+
+* *Mengelola Ulasan (Moderasi)* Admin dapat memantau, menampilkan, atau menyembunyikan ulasan tertentu untuk menjaga kualitas informasi di kolom komentar.
+* *Pengaturan Beranda & Web* Digunakan untuk mengelola konten utama pada halaman depan, termasuk memperbarui hero section dan informasi kontak.
+
+<img width="1440" height="1024" alt="AKUN ADMIN" src="https://github.com/user-attachments/assets/0a40b2cc-85fb-44e7-a927-d6cd1cb122d7" />
+
+* *Manajemen Akun Admin* Fitur untuk mengelola data akun administrator, termasuk menambah rekan admin baru ke dalam sistem.
+
 
 ### Tampilan halaman Home Website Samarinda Theme Park
 
