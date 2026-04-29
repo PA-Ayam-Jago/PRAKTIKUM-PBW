@@ -5,8 +5,6 @@
 
 <img width="100%" alt="Hero Home" src="https://github.com/user-attachments/assets/2ab0526b-2a11-43bc-89bb-adcc228f7158" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
 
-<h2 align="center"> Mitra👩🏻‍💻</h2>
-
 <h2 align="center"> Demo Website🌎</h2>
 
 Website dapat diakses melalui tautan di bawah ini:
