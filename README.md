@@ -98,19 +98,19 @@ Pengunjung dapat mengakses berbagai informasi terkait *Samarinda Theme Park* sec
 Admin memiliki akses penuh melalui sistem login untuk mengelola seluruh konten dan memantau aktivitas pada website. Fitur yang tersedia antara lain:
 </p>
 
-* *Login & Logout* Sistem autentikasi keamanan untuk memastikan akses dashboard hanya dimiliki oleh admin yang berwenang.
-
 <img width="1440" height="1024" alt="DASHBOARD" src="https://github.com/user-attachments/assets/4a79ccce-13c1-4375-9c9c-e4d9e83bfdbb" />
 
 * *Dashboard Admin* Menampilkan ringkasan statistik berupa jumlah total wahana, fasilitas, tiket, dan pemantauan ulasan terbaru secara efisien.
 
 <img width="1440" height="1024" alt="WAHANA ADMIN" src="https://github.com/user-attachments/assets/8601bc41-c30f-404c-8513-8486c6bd61a8" />
 
+
 <img width="1440" height="1024" alt="FASILITAS ADMIN" src="https://github.com/user-attachments/assets/bc088a8e-47a0-4c83-a661-34a9bb85a9a1" />
 
 * *Mengelola Data Wahana & Fasilitas (CRUD)* Admin dapat menambah, melihat, mengubah, dan menghapus informasi terkait wahana serta fasilitas pendukung.
 
 <img width="1440" height="1024" alt="TIKET ADMIN" src="https://github.com/user-attachments/assets/f2874f1c-3308-49be-bf87-ce49fb84b8d1" />
+
 
 <img width="1440" height="1024" alt="PROMO ADMIN" src="https://github.com/user-attachments/assets/6502543a-02a8-4a66-915d-0510d03569b9" />
 
@@ -119,18 +119,14 @@ Admin memiliki akses penuh melalui sistem login untuk mengelola seluruh konten d
 <img width="1440" height="1024" alt="REVIEW ADMIN" src="https://github.com/user-attachments/assets/a0914b24-38e7-4c58-a575-27101a5242ab" />
 
 * *Mengelola Ulasan (Moderasi)* Admin dapat memantau, menampilkan, atau menyembunyikan ulasan tertentu untuk menjaga kualitas informasi di kolom komentar.
-* *Pengaturan Beranda & Web* Digunakan untuk mengelola konten utama pada halaman depan, termasuk memperbarui hero section dan informasi kontak.
 
 <img width="1440" height="1024" alt="AKUN ADMIN" src="https://github.com/user-attachments/assets/0a40b2cc-85fb-44e7-a927-d6cd1cb122d7" />
 
 * *Manajemen Akun Admin* Fitur untuk mengelola data akun administrator, termasuk menambah rekan admin baru ke dalam sistem.
 
+<img width="1440" height="1024" alt="LOGOUT ADMIN" src="https://github.com/user-attachments/assets/18b42ac5-4e3f-4f01-a45e-58c04911109b" />
 
-### Tampilan halaman Home Website Samarinda Theme Park
-
-### **1. Halaman Home (Pengunjung)**
-
-### **2. Halaman Home (Admin)**
+* *Login & Logout* Sistem autentikasi keamanan untuk memastikan akses dashboard hanya dimiliki oleh admin yang berwenang.
 
 ## 🗂️ Struktur Folder
 
