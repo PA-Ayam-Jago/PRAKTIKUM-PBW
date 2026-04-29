@@ -1,11 +1,15 @@
-# <p align="center"> **WEBSITE SAMARINDA THEME PARK**
+# <h1 align="center"> **Website Samarinda Theme Park🎡**</h1>
 
-## **Website Kami**
+<img width="1366" height="674" alt="hero (home)" src="https://github.com/user-attachments/assets/2ab0526b-2a11-43bc-89bb-adcc228f7158" />
+
+## <h2 align="center"> **Mitra**</h2>
+
+## <h2 align="center"> **Demo Website🌎**</h2>
 
 Website dapat diakses melalui link berikut:
 [Klik untuk membuka website](...)
 
-## **Anggota Kelompok**
+## <p align="center"> **Anggota Kelompok**
 
 <div align="center">
 
@@ -17,6 +21,8 @@ Website dapat diakses melalui link berikut:
 | 4  | NURHIDAYAH                | 2409116002 |
 
 </div>
+
+## **Mitra**
 
 ## **Profil Objek Wisata**
 
