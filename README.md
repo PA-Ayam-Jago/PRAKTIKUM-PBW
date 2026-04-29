@@ -1,11 +1,11 @@
 <div align="center">
 
 # 🎡 Website Samarinda Theme Park
-**Proyek Praktikum Pemrograman Aplikasi Bergerak**
+**Proyek Akhir Praktikum Pemrograman Aplikasi Bergerak**
 
 <img width="100%" alt="Hero Home" src="https://github.com/user-attachments/assets/2ab0526b-2a11-43bc-89bb-adcc228f7158" style="border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);">
 
-<h2 align="center"> Demo Website🌎</h2>
+<h2 align="center"> Demo Website🌐</h2>
 
 Website dapat diakses melalui tautan di bawah ini:
 [Kunjungi Website Samarinda Theme Park](...)
@@ -19,7 +19,7 @@ Website dapat diakses melalui tautan di bawah ini:
 | 3  | Zelsya Rizqita Rahmadhini | 2409116022 |
 | 4  | Nurhidayah                | 2409116002 |
 
-<h2 align="center"> Profil Objek Wisata</h2>
+<h2 align="center"> Profil Objek Wisata🪪</h2>
 
 <p align="justify">
 Samarinda Theme Park merupakan salah satu destinasi wisata unggulan di Kota Samarinda yang menjadi sarana rekreasi utama bagi masyarakat, khususnya bagi kalangan keluarga dan anak-anak. Sebagai pusat hiburan yang modern, tempat wisata ini menawarkan beragam pengalaman seru melalui berbagai wahana permainan yang tersedia dalam konsep indoor maupun outdoor.
@@ -29,7 +29,7 @@ Samarinda Theme Park merupakan salah satu destinasi wisata unggulan di Kota Sama
 Kawasan ini dirancang untuk memberikan kenyamanan maksimal bagi para pengunjung dengan menyediakan fasilitas pendukung yang lengkap. Mulai dari area parkir yang luas, pusat kuliner (food court) yang menyajikan berbagai pilihan makanan, mushola, hingga berbagai spot foto estetis yang tersebar di seluruh area taman. Dengan perpaduan wahana yang variatif dan lingkungan yang nyaman, Samarinda Theme Park tidak hanya berfungsi sebagai tempat bermain, tetapi juga sebagai ruang publik untuk berinteraksi dan menciptakan momen kebersamaan yang berkesan di jantung Kota Samarinda.
 </p>
 
-<h2 align="center"> Permasalahan</h2>
+<h2 align="center"> Permasalahan💥</h2>
 <p align="justify">
 Meskipun memiliki potensi besar sebagai destinasi wisata keluarga, Samarinda Theme Park saat ini menghadapi beberapa kendala signifikan dalam aspek penyampaian informasi dan pelayanan digital:
 </p>
