@@ -138,6 +138,15 @@ folder koneksi databae
 ## 🗂️ Struktur Database
 <img width="235" height="242" alt="image" src="https://github.com/user-attachments/assets/f0c8e3fe-727c-4875-9aa7-b2619e833efb" />
 
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ebdc4067-3aae-4ef5-8989-70fc5c183915" />
+<img width="1211" height="240" alt="image" src="https://github.com/user-attachments/assets/5bec5a53-db27-4740-9fd7-90bf20c49c33" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/0aaa8e0b-e89a-457a-a2cb-93d04a0bcfd5" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1eb2e67a-f8e5-45b3-ae6b-c04956b4d8eb" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/b14f4818-8b73-428b-b20e-d3a942c5b9b6" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/1d584a29-8f92-43a5-8892-b9490802f376" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/6611d164-7101-4873-989b-0d3980d59422" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/103c0237-7def-4b72-8d5f-7ea80c1be9af" />
+
 ## 🗂️ Komponen Website
 
 ## 🗂️ Teknologi yang Digunakan
