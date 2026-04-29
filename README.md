@@ -33,7 +33,7 @@ Kawasan ini dirancang untuk memberikan kenyamanan maksimal bagi para pengunjung 
 
 <h2 align="center"> Permasalahan</h2>
 <p align="justify">
-Meskipun memiliki potensi besar sebagai destinasi wisata keluarga, **Samarinda Theme Park** saat ini menghadapi beberapa kendala signifikan dalam aspek penyampaian informasi dan pelayanan digital:
+Meskipun memiliki potensi besar sebagai destinasi wisata keluarga, Samarinda Theme Park saat ini menghadapi beberapa kendala signifikan dalam aspek penyampaian informasi dan pelayanan digital:
 </p>
 
 </div>
@@ -226,5 +226,64 @@ Admin memiliki akses penuh melalui sistem login untuk mengelola seluruh konten d
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/103c0237-7def-4b72-8d5f-7ea80c1be9af" />
 
 ## 🗂️ Komponen Website
+Proyek ini dibangun dengan komponen modular yang membedakan antara kebutuhan interaksi pengunjung dan kebutuhan manajemen data oleh administrator.
+
+### Komponen Halaman Pengunjung
+
+| Komponen | Fungsi & Implementasi |
+| :--- | :--- |
+| **Navbar** | Navigasi utama: *Home, Wahana, Fasilitas, Tiket, Review, Search,* dan *Book Now*. |
+| **Hero Section** | Visual utama taman hiburan, status operasional, dan tombol *Call to Action* (CTA). |
+| **Card Wahana** | Menampilkan katalog wahana (Bianglala, Monorail, dll) dengan desain kartu yang responsif. |
+| **Filter & Search** | Memudahkan pencarian wahana berdasarkan nama atau kategori (Ekstrem, Air, Keluarga). |
+| **Card Fasilitas** | Informasi sarana penunjang (Parkir, Food Court, Musholla, dll). |
+| **Card Tiket & Promo** | Menampilkan daftar harga, paket *bundle*, dan diskon khusus (Pelajar/Grup). |
+| **Form & Card Review** | Sistem input ulasan beserta tampilan testimoni (Rating, Nama, & Komentar). |
+| **Lokasi & Kontak** | Integrasi Google Maps, alamat fisik, dan saluran komunikasi resmi. |
+| **Footer** | Tautan cepat, jam operasional, serta kebijakan layanan (*Privacy & Terms*). |
+
+### Komponen Halaman Admin
+
+| Komponen | Fungsi & Implementasi |
+| :--- | :--- |
+| **Admin Login** | Gerbang masuk aman dengan validasi akun dan integrasi *Remember Me*. |
+| **Sidebar Admin** | Navigasi manajemen: *Dashboard, Wahana, Tiket, Promo, Review,* dan *Akun*. |
+| **Dashboard Card** | Statistik ringkas mengenai jumlah data yang tersimpan di sistem. |
+| **Tabel CRUD** | Tabel interaktif untuk mengelola (Tambah/Edit/Hapus) data Wahana, Fasilitas, Tiket, dan Promo. |
+| **Moderasi Review** | Tabel khusus untuk memantau dan mengatur status publikasi ulasan pengunjung. |
+| **Form Kelola Beranda** | Antarmuka dinamis untuk mengubah konten teks dan gambar pada halaman utama tanpa menyentuh kode. |
+| **Manajemen Akun** | Pengaturan profil admin, penggantian password, dan manajemen role akses. |
+| **Modal & Button** | Dialog konfirmasi untuk aksi krusial seperti hapus data dan *Logout*. |
 
 ## 🗂️ Teknologi yang Digunakan
+Berikut adalah teknologi utama yang digunakan dalam pengembangan website **Samarinda Theme Park**:
+
+<div align="left">
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MYSQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/BOOTSTRAP-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AUTH-SESSION%20PHP-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/ARCHITECTURE-MVC-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/CRUD-SYSTEM-red?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/TOOLS-LARAGON-blue?style=for-the-badge&logo=laragon&logoColor=white"/>
+</div>
+
+### Frontend & Tampilan Website
+* **HTML5** Digunakan untuk membangun struktur dasar halaman website secara semantik.
+* **CSS3** Digunakan untuk mengatur desain, tata letak, dan aspek visual website.
+* **Bootstrap 5** Framework CSS utama untuk memastikan tampilan website bersifat responsif dan modern di berbagai ukuran layar.
+* **JavaScript** Digunakan untuk meningkatkan interaktivitas pada elemen website dan menangani aksi pengguna.
+* **Google Fonts** Penyedia tipografi digital untuk memastikan font yang digunakan terlihat profesional dan estetis.
+
+### Backend & Pengolahan Data
+* **PHP** Bahasa pemrograman sisi server (*server-side*) untuk mengelola logika aplikasi dan menjembatani komunikasi data.
+* **MySQL** Sistem manajemen database relasional untuk menyimpan data wahana, fasilitas, tiket, hingga akun admin.
+* **MVC Architecture** Penerapan struktur kode yang rapi dengan memisahkan *Model, View,* dan *Controller* agar sistem lebih mudah dikembangkan.
+
+### Sistem, Keamanan & Tools
+* **Session PHP (Auth)** Digunakan untuk manajemen autentikasi login guna membatasi hak akses halaman admin secara aman.
+* **CRUD System** Implementasi fungsi *Create, Read, Update,* dan *Delete* untuk pengelolaan konten destinasi wisata.
+* **Development Tools** Menggunakan **Laragon** sebagai server lokal, **Visual Studio Code** sebagai editor teks utama, dan **Google Chrome** untuk pengujian aplikasi.
