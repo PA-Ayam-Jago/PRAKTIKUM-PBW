@@ -131,45 +131,71 @@ Admin memiliki akses penuh melalui sistem login untuk mengelola seluruh konten d
 ## 🗂️ Struktur Folder
 
 ### Sturktur Folder pada VS Code
+
 * **Folder Utama**
+<div align="center">
 <img width="235" height="452" alt="image" src="https://github.com/user-attachments/assets/0b0e9fb8-dd63-4cee-8d8b-a86162cc86e3" />
+</div>
 
 * **Folder Admin**
+<div align="center">
 <img width="177" height="363" alt="image" src="https://github.com/user-attachments/assets/39a21db4-5f23-4975-bab8-68705f112102" />
+</div>
 
 * **Folder Akun_Admin (Admin)**
+<div align="center">
 <img width="178" height="160" alt="image" src="https://github.com/user-attachments/assets/19ecf05f-3ee2-4b67-b8e1-42133633a914" />
+</div>
 
 * **Folder Beranda (Admin)**
+<div align="center">
 <img width="171" height="71" alt="image" src="https://github.com/user-attachments/assets/343036d1-ab90-4403-849b-efd0a4143239" />
+</div>
 
 * **Folder Fasilitas (Admin)**
+<div align="center">
 <img width="177" height="120" alt="image" src="https://github.com/user-attachments/assets/2942d251-4903-4002-85ad-1fe2fbec7874" />
+</div>
 
 * **Folder Kontak (Admin)**
+<div align="center">
 <img width="195" height="90" alt="image" src="https://github.com/user-attachments/assets/5a94c7d0-9b5d-4ce9-a317-de81c9343b09" />
+</div>
 
 * **Folder Partials (Admin)**
+<div align="center">
 <img width="201" height="94" alt="image" src="https://github.com/user-attachments/assets/d686a1bf-55f2-4cb0-a13c-cda5ccf0b191" />
+</div>
 
 * **Folder Promo (Admin)**
+<div align="center">
 <img width="168" height="115" alt="image" src="https://github.com/user-attachments/assets/a7573872-789f-4655-943f-d63191e4d452" />
+</div>
 
 * **Folder Tiket (Admin)**
+<div align="center">
 <img width="177" height="123" alt="image" src="https://github.com/user-attachments/assets/2092238e-0196-484a-8ab7-c9d757fafb82" />
+</div>
 
 * **Folder Ulasan (Admin)**
+<div align="center">
 <img width="202" height="127" alt="image" src="https://github.com/user-attachments/assets/3a21efc1-6214-4342-bc8e-4aa5aa46cca3" />
+</div>
 
 * **Folder Wahana (Admin)**
+<div align="center">
 <img width="210" height="121" alt="image" src="https://github.com/user-attachments/assets/530c7406-667e-4e4f-bdc1-0f5cac81c3b6" />
+</div>
 
 * **Folder Asset**
+<div align="center">
 <img width="176" height="413" alt="image" src="https://github.com/user-attachments/assets/75e43e5a-1ab3-4cdb-a788-dfe14174632c" />
+</div>
 
 * **Folder Koneksi Database**
+<div align="center">
 <img width="162" height="42" alt="image" src="https://github.com/user-attachments/assets/3f1f77fa-54c2-4ef1-a28e-a4b89444b3b2" />
-
+</div>
 
 ## 🗂️ Struktur Database
 <img width="235" height="242" alt="image" src="https://github.com/user-attachments/assets/f0c8e3fe-727c-4875-9aa7-b2619e833efb" />
