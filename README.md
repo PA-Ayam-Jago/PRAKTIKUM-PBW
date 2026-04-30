@@ -8,7 +8,7 @@
 <h2 align="center"> Demo Website🌐</h2>
 
 Website dapat diakses melalui tautan di bawah ini:
-[Kunjungi Website Samarinda Theme Park](...)
+[Kunjungi Website Samarinda Theme Park](http://smd-tp.rf.gd/)
   
 ## Anggota Kelompok Ayam Jago🐔
 
